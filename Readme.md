@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Mikhail Malev](https://up.htmlacademy.ru/adaptive/19/user/223754).
-* Наставник: `Михаил Колотович`.
+* Наставник: [Михаил Колотович](https://htmlacademy.ru/profile/id225353).
 
 ---
 
