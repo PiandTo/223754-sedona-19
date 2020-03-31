@@ -8,22 +8,27 @@
     <header class="main-header">
       <nav class="main-header__nav main-nav">
         <div class="main-nav__wrapper">
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+            <img src="https://via.placeholder.com/150x150" width="30" height="30">
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Фото и видео</a>
+              <a class="main-nav__link" href="/photo.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Форма отзыва</a>
+              <a class="main-nav__link" href="/form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">HTMLACADEMY</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
             </li>
           </ul>
+          <button class="main-nav__toggle main-nav__toggle--open" type="button">
+            <img src="https://via.placeholder.com/150x150" width="30" height="30">
+          </button>
         </div>
-        <button class="main-nav__toggle" type="button"></button>
       </nav>
       <a class="main-header__logo" href="">
         <img class="main-header__logo-image" src="https://via.placeholder.com/150x150" width="30" height="30" alt="HTML Academy: Седона">
@@ -43,13 +48,13 @@
           <figure class="post">
             <img class="post__image" src="#" width="226" height="30" alt="Sunny road">
             <figcaption class="post__content">
-              <h3 class="post__title">Народные просторы</h3>
+              <h3 class="post__title">Неродные просторы</h3>
               <span class="post__author">Автор фото: Борис</span>
               <button class="post__likes">
                 <svg class="post__like-icon">
                   <use xlink:href=""></use>
                 </svg>
-                <span class="post__likes-count"></span>
+                <span class="post__likes-count">1350</span>
               </button>
             </figcaption>
           </figure>
@@ -62,7 +67,7 @@
                 <svg class="post__like-icon">
                   <use xlink:href=""></use>
                 </svg>
-                <span class="post__likes-count"></span>
+                <span class="post__likes-count">143</span>
               </button>
             </figcaption>
           </figure>
@@ -75,7 +80,7 @@
                 <svg class="post__like-icon">
                   <use xlink:href=""></use>
                 </svg>
-                <span class="post__likes-count"></span>
+                <span class="post__likes-count">96</span>
               </button>
             </figcaption>
           </figure>
@@ -88,7 +93,7 @@
                 <svg class="post__icon">
                   <use xlink:href=""></use>
                 </svg>
-                <span class="post__likes-count"></span>
+                <span class="post__likes-count">254</span>
               </button>
             </figcaption>
           </figure>
@@ -100,13 +105,19 @@
       <h2 class="page-footer__header">#VisitSedona</h2>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--twitter" href=""></a>
+          <a class="social-list__link social-list__link--twitter" href="">
+            <span class="visually-hidden">Twitter</span>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook" href=""></a>
+          <a class="social-list__link social-list__link--facebook" href="">
+            <span class="visually-hidden">Facebook</span>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--youtube"></a>
+          <a class="social-list__link social-list__link--youtube">
+            <span class="visually-hidden">YouTuBe</span>
+          </a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">

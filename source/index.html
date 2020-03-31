@@ -8,22 +8,27 @@
     <header class="main-header">
       <nav class="main-header__nav main-nav">
         <div class="main-nav__wrapper">
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+            <img src="https://via.placeholder.com/150x150" width="30" height="30">
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Фото и видео</a>
+              <a class="main-nav__link" href="/photo.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">Форма отзыва</a>
+              <a class="main-nav__link" href="/form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="">HTMLACADEMY</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
             </li>
           </ul>
-        </div>
-        <button class="main-nav__toggle" type="button"></button>
+          <button class="main-nav__toggle main-nav__toggle--open" type="button">
+            <img src="https://via.placeholder.com/150x150" width="30" height="30">
+          </button>
+        </div>  
       </nav>
       <a class="main-header__logo" href="">
         <img class="main-header__logo-image" src="https://via.placeholder.com/150x150" width="30" height="30" alt="HTML Academy: Седона">
@@ -34,17 +39,17 @@
       <section class="main-page__ads">
         <img class="main-page__ads-image" src="https://via.placeholder.com/150x150" width="226" height="226" alt="Welcome to Sedona">
       </section>
-      <section class="main-page__list">
+      <ul class="main-page__list">
         <header class="main-page__item main-page__item--header">
-          <h2 class="main-page__title main-page__title--header">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <h2 class="main-page__title main-page__title--header">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p clas="main-page__description main-page__description--header">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </header>
-        <article class="main-page__item main-page__item--important">
+        <li class="main-page__item main-page__item--important">
           <h2 class="main-page__title">Настоящий городок</h2>
           <p class="main-page__number">№1</p>
           <p class="main-page__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           <img class="main-page__image" src="https://via.placeholder.com/150x150" width= "225" height= "225" alt="Sedona - real city">
-        </article>
+        </li>
         <article class="main-page__promo promo">
           <ul class="promo__list">
             <li class="promo__item promo__item--home">
@@ -61,41 +66,47 @@
             </li>
           </ul>
         </article>
-        <article class="main-page__item main-page__item--important">
+        <li class="main-page__item main-page__item--important">
           <h2 class="main-page__title">Там есть мост Дьявола</h2>
           <p class="main-page__number">№2</p>
           <p class="main-page__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           <img class="main-page__image" src="https://via.placeholder.com/150x150" width= "225" height= "225" alt="Sedona - real city">
-        </article>
-        <article class="main-page__item">
+        </li>
+        <li class="main-page__item">
           <h2 class="main-page__title">Небольшая площадь</h2>
           <p class="main-page__number">№3</p>
           <p class="main-page__description">Все интересные места находятся очень близко</p>
-        </article>
-        <article class="main-page__item">
+        </li>
+        <li class="main-page__item">
           <h2 class="main-page__title">Красивая дорога</h2>
           <p class="main-page__number">№4</p>
           <p class="main-page__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </article>
-        <article class="main-page__item">
+        </li>
+        <li class="main-page__item">
           <h2 class="main-page__title">Мало туристов</h2>
           <p class="main-page__number">№5</p>
           <p class="main-page__description">Большинство едет в Гранд Каньон и толпится там</p>
-        </article>
-      </section>
+        </li>
+      </ul>
     </main>
     <footer class="page-footer">
       <h1 class="visually-hidden">Socials contacts and copyrights</h1>
       <h2 class="page-footer__header">#VisitSedona</h2>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--twitter" href=""></a>
+          <a class="social-list__link social-list__link--twitter" href="">
+            <span class="visually-hidden">Twitter</span>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook" href=""></a>
+          <a class="social-list__link social-list__link--facebook" href="">
+            <span class="visually-hidden">Facebook</span>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--youtube"></a>
+          <a class="social-list__link social-list__link--youtube">
+            <span class="visually-hidden">YouTuBe</span>
+          </a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
