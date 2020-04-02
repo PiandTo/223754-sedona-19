@@ -40,7 +40,7 @@
         <section class="feedback__ads">
           <img class="feedback__ads-image" src="https://via.placeholder.com/150x150" width="226" height="226" alt="Welcome to Sedona">
         </section>
-        <header class="feedback__header"></header>
+        <header class="feedback__header">
           <h2 class="feedback__title">Оставьте свой отзыв</h2>
           <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
@@ -48,22 +48,35 @@
           <fieldset class="feedback__fieldset">
             <legend class="feedback__subtitle">Представьтесь:</legend>
             <label class="feedback__input">
-              <span class="feedback__text feedback__text--info">Имя*</span>
-              <input class="feedback__input-text" name="user-name" type="text" required>
+              <span class="feedback__text">Имя*:</span>
+              <input class="feedback__input-text" name="user-name" type="text" placeholder="Петр" required>
             </label>
             <label class="feedback__input">
-              <span class="feedback__text">Фамилия*</span>
-              <input class="feedback__input-text" name="user-surname" type="text" required>
+              <span class="feedback__text">Фамилия*:</span>
+              <input class="feedback__input-text" name="user-surname" type="text" placeholder="Иванов" required>
             </label>
             <label class="feedback__input">
-              <span class="feedback__text">Отчество</span>
-              <input class="feedback__input-text" name="user-middle-name" type="text">
+              <span class="feedback__text">Отчество:</span>
+              <input class="feedback__input-text" name="user-middle-name" type="text" placeholder="Александрович">
+            </label>
+          </fieldset>
+          <fieldset class="feedback__fieldset">
+            <legend class="feedback__subtitle">Контактная информация:</legend>
+            <label  class="feedback__input">
+              <span class="feedback__text">Контактный телефон*:</span>
+              <input class="feedback__input-text" placeholder="Введите телефон" name="user-phone" aria-label="Введите телефон" type="text" required>
+              <span class="feedback__phone-image feedback__phone-image--icon"></span>
+            </label>
+            <label  class="feedback__input">
+              <span class="feedback__text">Электронная почта*:</span>
+              <input class="feedback__input-text" placeholder="Введите e-mail" name="user-email" aria-label="Введите email" type="email" required>
+              <span class="feedback__email-image feedback__email-image--icon"></span>
             </label>
           </fieldset>
           <fieldset class="feedback__fieldset">
             <legend class="feedback__subtitle">Ваше общее впечатление:</legend>
             <label class="feedback__input">
-              <input name="visually-hidden" type="radio">
+              <input name="visually-hidden" type="radio" checked>
               <span class="feedback__input-radio"></span>
               Скорее положительное
             </label>
@@ -79,30 +92,19 @@
             </label>
           </fieldset>
           <fieldset class="feedback__fieldset">
-            <legend class="feedback__subtitle">Контактная информация:</legend>
-            <label  class="feedback__input">
-              <span class="feedback__text">Телефон*</span>
-              <input class="feedback__input-text" placeholder="Введите телефон" name="user-phone" aria-label="Введите телефон" type="text" required>
-            </label>
-            <label  class="feedback__input">
-              <span class="feedback__text">Электронная почта*</span>
-              <input class="feedback__input-text" placeholder="Введите e-mail" name="user-email" aria-label="Введите email"type="email" required>
-            </label>
-          </fieldset>
-          <fieldset class="feedback__fieldset">
             <legend class="feedback__subtitle">Посещенные достопримечательности:</legend>
             <label class="feedback__input">
-              <input name="visually-hidden" type="checkbox">
+              <input name="visually-hidden" type="checkbox" checked>
               <span class="feedback__input-checkbox"></span>
               Мост Дьявола
             </label>
             <label class="feedback__input">
-              <input name="visually-hidden" type="checkbox">
+              <input name="visually-hidden" type="checkbox" checked>
               <span class="feedback__checkbox"></span>
               Гора-Колокол
             </label>
             <label class="feedback__input">
-              <input name="visually-hidden" type="checkbox">
+              <input name="visually-hidden" type="checkbox" checked>
               <span class="feedback__checkbox"></span>
               Слайд-парк
             </label>
@@ -114,11 +116,10 @@
           </fieldset>
           <fieldset class="feedback__fieldset">
             <legend class="feedback__subtitle">Опишите свои эмоции:</legend>
-            <textarea class="" name="opinion">Опишите подробно все свои восторги</textarea>
+            <textarea class="feedback__textarea" name="opinion" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
         </form>
         <button class="feedback__submit" type="submit">Отправить отзыв</button>
-        <small>*-Обязательные поля</small>
       </div>
     </main>
     <footer class="page-footer">
