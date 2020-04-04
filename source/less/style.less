@@ -1,0 +1,38 @@
+@font-face {
+  font-family: @fontName;
+  src:  url("/fonts/ptsans.woff2") format("woff2"),
+    url("/fonts/ptsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: @fontName;
+  src:  url("/fonts/ptsansbold.woff2") format("woff2"),
+    url("/fonts/ptsansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@import "visually-hidden.less";
+@import "variables.less";
+@import "mixin.less";
+@import "blocks/header.less";
+@import "blocks/nav.less";
+// @import "blocks/copyright.less";
+// @import "blocks/footer.less";
+@import "blocks/main-page.less";
+// @import "blocks/promo.less";
+// @import "blocks/social.less";
+@import "blocks/booking.less";
+@import "blocks/post.less";
+
+body {
+  color: @black;
+  line-height: normal;
+  font-family: @fontName;
+  font-weight: normal;
+  width: @mobile;
+  margin: @centr;
+  font-size: 18px;
+}
