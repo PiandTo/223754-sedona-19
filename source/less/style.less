@@ -14,25 +14,35 @@
   font-style: normal;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-size: 100%;
+}
+
 @import "visually-hidden.less";
 @import "variables.less";
 @import "mixin.less";
 @import "blocks/header.less";
 @import "blocks/nav.less";
-// @import "blocks/copyright.less";
-// @import "blocks/footer.less";
+@import "blocks/copyright.less";
+@import "blocks/footer.less";
 @import "blocks/main-page.less";
-// @import "blocks/promo.less";
-// @import "blocks/social.less";
+@import "blocks/promo.less";
+@import "blocks/social.less";
 @import "blocks/booking.less";
 @import "blocks/post.less";
+@import "blocks/presentation.less";
+@import "blocks/feedback.less";
 
 body {
   color: @black;
-  line-height: normal;
+  line-height: 26px;
   font-family: @fontName;
   font-weight: normal;
   width: @mobile;
   margin: @centr;
   font-size: 18px;
+  .nostyle_link();
 }
