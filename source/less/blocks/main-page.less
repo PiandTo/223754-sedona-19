@@ -1,16 +1,8 @@
-.main-page__ads {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  width: 100%;
-  height: auto;
-}
-
-.main-page__list {
-  padding: 0;
-}
-
 .main-page__item {
   .nostyle_item();
   background-color: @lightgrey;
+  text-align: center;
+  overflow: hidden;
 
   &--header {
     background-color: @white;
@@ -27,15 +19,47 @@
 }
 
 .main-page__number {
-  text-align: center;
   font-size: 14px;
   line-height: 21px;
+  position: relative;
+  color: @text;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 1px;
+    background-color: @black;
+    position: absolute;
+    top: 50%;
+    left: 26px;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 1px;
+    background-color: @black;
+    position: absolute;
+    top: 50%;
+    right: 26px;
+  }
+
+  &--important::before {
+    background-color: @white;
+  }
+
+  &--important::after {
+    background-color: @white;
+  }
 }
 
 .main-page__description {
   text-align: center;
   font-size: 14px;
   line-height: 21px;
+  color: @text;
 
   &--header {
     line-height: 26px;
