@@ -22,7 +22,7 @@
   font-size: 14px;
   line-height: 21px;
   position: relative;
-  color: @black;
+  color: @text;
 
   &::before {
     display: block;
@@ -47,7 +47,7 @@
   }
 
   &--important {
-    color: @text;
+    color: @white;
   }
 
   &--important::before {
@@ -64,6 +64,10 @@
   font-size: 14px;
   line-height: 21px;
   color: @text;
+
+  &--important {
+    color: @white;
+  }
 
   &--header {
     line-height: 26px;
