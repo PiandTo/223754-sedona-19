@@ -1,0 +1,49 @@
+@font-face {
+  font-family: @fontName;
+  src:  url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: @fontName;
+  src:  url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 100%;
+}
+
+@import "visually-hidden.less";
+@import "variables.less";
+@import "mixin.less";
+@import "blocks/header.less";
+@import "blocks/nav.less";
+@import "blocks/copyright.less";
+@import "blocks/footer.less";
+@import "blocks/main-page.less";
+@import "blocks/promo.less";
+@import "blocks/social.less";
+@import "blocks/booking.less";
+@import "blocks/post.less";
+@import "blocks/presentation.less";
+@import "blocks/feedback.less";
+@import "blocks/ads.less";
+
+body {
+  color: @black;
+  line-height: 26px;
+  font-family: @fontName;
+  font-weight: normal;
+  width: @mobile;
+  margin: @centr;
+  font-size: 18px;
+  .nostyle_link();
+}

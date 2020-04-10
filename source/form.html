@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header class="main-header">
       <a class="main-header__logo" href="">
-        <img class="main-header__logo-image" src="https://via.placeholder.com/150x150" width="30" height="30" alt="HTML Academy: Седона">
+        <img class="main-header__logo-image" src="img/logo-sedona-mobile.svg" width="30" height="30" alt="HTML Academy: Седона">
       </a>
       <nav class="main-header__nav main-nav">
         <div class="main-nav__wrapper">
@@ -37,8 +38,8 @@
     <main class="feedback">
       <div class="feedback__wrapper">
         <h1 class="visually-hidden">Feedbacks</h1>
-        <section class="feedback__ads">
-          <img class="feedback__ads-image" src="https://via.placeholder.com/150x150" width="226" height="226" alt="Welcome to Sedona">
+        <section class="feedback__ads ads">
+          <img class="ads__image" src="img/text-sedona.svg" width="320" height="160" alt="Welcome to Sedona">
         </section>
         <header class="feedback__header">
           <h2 class="feedback__title">Оставьте свой отзыв</h2>
@@ -48,15 +49,15 @@
           <fieldset class="feedback__fieldset">
             <legend class="feedback__subtitle">Представьтесь:</legend>
             <label class="feedback__input">
-              <span class="feedback__text">Имя*:</span>
+              Имя*:
               <input class="feedback__input-text" name="user-name" type="text" placeholder="Петр" required>
             </label>
             <label class="feedback__input">
-              <span class="feedback__text">Фамилия*:</span>
+              Фамилия*:
               <input class="feedback__input-text" name="user-surname" type="text" placeholder="Иванов" required>
             </label>
             <label class="feedback__input">
-              <span class="feedback__text">Отчество:</span>
+              Отчество:
               <input class="feedback__input-text" name="user-middle-name" type="text" placeholder="Александрович">
             </label>
           </fieldset>
@@ -119,7 +120,7 @@
             <textarea class="feedback__textarea" name="opinion" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
         </form>
-        <button class="feedback__submit" type="submit">Отправить отзыв</button>
+        <button class="feedback__submit button" type="submit">Отправить отзыв</button>
       </div>
     </main>
     <footer class="page-footer">
@@ -127,25 +128,25 @@
       <h2 class="page-footer__header">#VisitSedona</h2>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--twitter" href="">
-            <span class="visually-hidden">Twitter</span>
+          <a class="social-list__link" href="">
+            <img class="social-list__link--twitter" src="img/icon-twitter.svg" width="20" height="20" alt="Twitter">
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook" href="">
-            <span class="visually-hidden">Facebook</span>
+          <a class="social-list__link" href="">
+            <img class="social-list__link--facebook" src="img/icon-facebook.svg" width="20" height="20" alt="Facebook">
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--youtube">
-            <span class="visually-hidden">YouTuBe</span>
+          <a class="social-list__link">
+            <img class="social-list__link--youtube" src="img/icon-youtube.svg" width="20" height="20" alt="TouTuBe">
           </a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link copyright__link--htmlacademy">
-          <img src="https://via.placeholder.com/150x150" width="30" height="30" alt="Ссылка на HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="30" height="30" alt="Ссылка на HTML Academy">
         </a>
       </div>
     </footer>
