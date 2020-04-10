@@ -22,7 +22,7 @@
   font-size: 14px;
   line-height: 21px;
   position: relative;
-  color: @text;
+  color: @black;
 
   &::before {
     display: block;
@@ -44,6 +44,10 @@
     position: absolute;
     top: 50%;
     right: 26px;
+  }
+
+  &--important {
+    color: @text;
   }
 
   &--important::before {
