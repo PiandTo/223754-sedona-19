@@ -36,6 +36,7 @@ h4 {
 @import "blocks/presentation.less";
 @import "blocks/feedback.less";
 @import "blocks/ads.less";
+@import "blocks/logo.less";
 
 body {
   color: @black;
@@ -46,4 +47,16 @@ body {
   margin: @centr;
   font-size: 18px;
   .nostyle_link();
+}
+
+@media (min-width: @tablet) {
+  body {
+    width: @tablet;
+  }
+}
+
+@media (min-width: @desktop) {
+  body {
+    width: @desktop;
+  }
 }
