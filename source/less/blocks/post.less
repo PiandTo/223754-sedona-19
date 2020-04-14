@@ -1,3 +1,8 @@
+.post {
+  margin: 0;
+  padding: 0;
+}
+
 .post__content {
   font-size: 14px;
   line-height: 24px;
@@ -18,4 +23,38 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (min-width: @tablet) {
+  .post {
+    width: 50%;
+  }
+
+  .post--main {
+    width: @tablet;
+  }
+}
+
+@media (min-width: @desktop) {
+  .post {
+    position: relative;
+    width: 225px;
+  }
+
+  .post__content {
+    position: absolute;
+    color: @white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+  .post--main {
+    width: @desktop;
+  }
+
+  .post__author {
+    color: @white;
+  }
 }

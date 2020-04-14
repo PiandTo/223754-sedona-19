@@ -7,38 +7,38 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo" href="">
-        <img class="main-header__logo-image" src="img/logo-sedona-mobile.svg" width="30" height="30" alt="HTML Academy: Седона">
-      </a>
       <nav class="main-header__nav main-nav">
-        <div class="main-nav__wrapper">
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">
-            <img src="https://via.placeholder.com/150x150" width="30" height="30" alt="Button to close menu">
-          </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фото и видео</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
-            </li>
-          </ul>
-          <button class="main-nav__toggle main-nav__toggle--open" type="button">
-            <img src="https://via.placeholder.com/150x150" width="30" height="30" alt="Button to open menu">
-          </button>
-        </div>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <img src="https://via.placeholder.com/150x150" width="30" height="30" alt="Button to close menu">
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item logo">
+            <a class="logo__link" href="">
+              <img class="logo__image" src="img/logo-sedona-mobile.svg" width="30" height="30" alt="HTML Academy: Седона">
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle main-nav__toggle--open" type="button">
+          <img src="https://via.placeholder.com/150x150" width="30" height="30" alt="Button to open menu">
+        </button>
       </nav>
     </header>
     <main class="main-page">
       <h1 class="visually-hidden">Main infos about Sedona</h1>
       <section class="main-page__ads ads">
-        <img class="ads__image" src="img/text-sedona-index.svg" width="100%" height="auto" alt="Welcome to Sedona">
+        <img class="ads__image" src="img/text-sedona-index.svg" alt="Welcome to Sedona">
       </section>
       <ul class="main-page__list">
         <li class="main-page__item main-page__item--header">
@@ -46,9 +46,11 @@
           <p class="main-page__description main-page__description--header">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </li>
         <li class="main-page__item main-page__item--important">
-          <h2 class="main-page__title">Настоящий городок</h2>
-          <span class="main-page__number main-page__number--important">№1</span>
-          <p class="main-page__description main-page__description--important">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="main-page__wrapper">
+            <h2 class="main-page__title">Настоящий городок</h2>
+            <span class="main-page__number main-page__number--important">№1</span>
+            <p class="main-page__description main-page__description--important">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
           <img class="main-page__image" src="img/main-city-mobile@1x.jpg" width= "auto" height= "262px" alt="Sedona - real city">
         </li>
         <li class="main-page__promo promo">
@@ -68,60 +70,70 @@
           </ul>
         </li>
         <li class="main-page__item main-page__item--important">
-          <h2 class="main-page__title">Там есть мост Дьявола</h2>
-          <span class="main-page__number main-page__number--important">№2</span>
-          <p class="main-page__description main-page__description--important">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <img class="main-page__image" src="img/photo-bridge-mobile@1x.jpg" width= "100%" height= "262px" alt="Sedona - real city">
+          <div class="main-page__wrapper">
+            <h2 class="main-page__title">Там есть мост Дьявола</h2>
+            <span class="main-page__number main-page__number--important">№2</span>
+            <p class="main-page__description main-page__description--important">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <img class="main-page__image" src="img/photo-bridge-mobile@1x.jpg" width= "100%" height= "262px" alt="Sedona - beautiful Bridge">
         </li>
         <li class="main-page__item">
-          <h2 class="main-page__title">Небольшая площадь</h2>
-          <span class="main-page__number">№3</span>
-          <p class="main-page__description">Все интересные места находятся очень близко</p>
-        </li>
-        <li class="main-page__item">
-          <h2 class="main-page__title">Красивая дорога</h2>
-          <span class="main-page__number">№4</span>
-          <p class="main-page__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="main-page__item">
-          <h2 class="main-page__title">Мало туристов</h2>
-          <span class="main-page__number">№5</span>
-          <p class="main-page__description">Большинство едет в Гранд Каньон и толпится там</p>
+          <ul class="main-page__other-list">
+            <li class="main-page__other-item">
+              <h2 class="main-page__title">Небольшая площадь</h2>
+              <span class="main-page__number">№3</span>
+              <p class="main-page__description">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="main-page__other-item">
+              <h2 class="main-page__title">Красивая дорога</h2>
+              <span class="main-page__number">№4</span>
+              <p class="main-page__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="main-page__other-item">
+              <h2 class="main-page__title">Мало туристов</h2>
+              <span class="main-page__number">№5</span>
+              <p class="main-page__description">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ul>
         </li>
       </ul>
       <section class="main-page__booking booking">
-        <h1 class="visually-hidden">Here you can order accomodation</h1>
-        <h2 class="booking__title">Заинтересовались?</h2>
-        <p class="booking__description">Укажите предлагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="booking__button button" type="button">Найти гостиницу</button>
+        <div class="booking-wrapper">
+          <h1 class="visually-hidden">Here you can order accomodation</h1>
+          <h2 class="booking__title">Заинтересовались?</h2>
+          <p class="booking__description">Укажите предлагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="booking__button button" type="button">Найти гостиницу</button>
+        </div>
         <iframe class="booking__map-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418417.1443444595!2d-111.88912363949959!3d34.98457171363649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sru!4v1577004822611!5m2!1sen!2sru" max-width="100%" height="350px"; frameborder="0" style="border: 0;" allowfullscreen=""></iframe>
       </section>
     </main>
     <footer class="page-footer">
-      <h1 class="visually-hidden">Socials contacts and copyrights</h1>
-      <h2 class="page-footer__header">#VisitSedona</h2>
-      <ul class="page-footer__social social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="">
-            <img class="social-list__link--twitter" src="img/icon-twitter.svg" width="20" height="20" alt="Twitter">
+      <div class="page-footer__wrapper">
+        <h1 class="visually-hidden">Socials contacts and copyrights</h1>
+        <h2 class="page-footer__header">#VisitSedona</h2>
+        <ul class="page-footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="">
+              <img class="social-list__image social-list__image--twitter" src="img/icon-twitter.svg" width="20" height="20" alt="Twitter">
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="">
+              <img class="social-list__image social-list__image--facebook" src="img/icon-facebook.svg" width="20" height="20" alt="Facebook">
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link">
+              <img class="social-list__image social-list__image--youtube" src="img/icon-youtube.svg" width="20" height="20" alt="TouTuBe">
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link copyright__link--htmlacademy">
+            <img src="img/logo-htmlacademy.svg" width="30" height="30" alt="Ссылка на HTML Academy">
           </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="">
-            <img class="social-list__link--facebook" src="img/icon-facebook.svg" width="20" height="20" alt="Facebook">
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link">
-            <img class="social-list__link--youtube" src="img/icon-youtube.svg" width="20" height="20" alt="TouTuBe">
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link copyright__link--htmlacademy">
-          <img src="img/logo-htmlacademy.svg" width="30" height="30" alt="Ссылка на HTML Academy">
-        </a>
+        </div>
       </div>
     </footer>
   </body>
