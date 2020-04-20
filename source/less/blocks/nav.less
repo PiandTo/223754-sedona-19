@@ -3,14 +3,95 @@
   position: relative;
 }
 
+.main-nav__link {
+  display: block;
+  margin-top: 7.5px;
+  color: @white;
+  .nostyle_link();
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.main-nav__list li:not(:nth-child(3)):not(:nth-child(5)):nth-child(-n+4) {
+  border-bottom: 1px solid #678fa8;
+}
+
+.main-nav__list li:not(:nth-child(3)):nth-child(n+2) {
+  border-top: 1px solid #9ac2db;
+}
+
 .main-nav__toggle {
-  background-color: red;
   position: absolute;
-  top: 0;
-  right: 0;
+  background-color: @white;
+  z-index: 2;
+  border: none;
+  display: block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+
+  &--close {
+    background-color: @lightblue;
+    top: 15px;
+    right: 15px;
+    position: absolute;
+    outline: none;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: -4px;
+      width: 30px;
+      height: 4px;
+      background-color: @white;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: #cde1ed;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: #a7cae0;
+    }
+  }
 
   &--open {
-    top: 225px;
+    top: 240px;
+    right: 20px;
+    outline: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 23px;
+      height: 4px;
+      background-color: @lightblue;
+      box-shadow: 0 8px 0 0 @lightblue, 0 16px 0 0 @lightblue;
+    }
+
+    &:hover::before {
+      background-color: #a7cae0;
+      box-shadow: 0 8px 0 0 #a7cae0, 0 16px 0 0 #a7cae0;
+    }
+
+    &:active::before {
+      background-color: #cde1ed;
+      box-shadow: 0 8px 0 0 #cde1ed, 0 16px 0 0 #cde1ed;
+    }
   }
 }
 
@@ -26,14 +107,6 @@
   height: 55px;
   .nostyle_item();
   text-align: center;
-  vertical-align: middle;
-}
-
-.main-nav__link {
-  color: @white;
-  .nostyle_link();
-  line-height: 40px;
-  font-weight: bold;
 }
 
 @media (min-width: @tablet) {
@@ -44,6 +117,14 @@
 
   .main-nav__item {
     background-color: @white;
+  }
+
+  .main-nav__list li:not(:nth-child(3)):not(:nth-child(5)):nth-child(-n+4) {
+    border-bottom: none;
+  }
+
+  .main-nav__list li:not(:nth-child(3)):nth-child(n+2) {
+    border-top: none;
   }
 
   .main-nav__toggle {
@@ -66,5 +147,9 @@
 @media (min-width: @desktop) {
   .main-nav {
     width: @desktop;
+  }
+
+  .main-nav__list {
+    padding: 0 60px;
   }
 }

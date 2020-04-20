@@ -1,21 +1,50 @@
 .post {
   margin: 0;
-  padding: 0;
+  padding: 20px 20px;
+  border-bottom: 1px solid @lightgrey;
+}
+
+.post__image {
+  margin: 0;
+  width: 100%;
 }
 
 .post__content {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
+  padding-top: 20px;
+}
+
+.post__title {
+  margin: 0;
 }
 
 .post__author {
   text-transform: none;
   color: @text;
+  margin: 0;
+  padding-top: 7px;
+}
+
+.post__likes {
+  width: 70px;
+  border: none;
+  background-color: @white;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  fill: @lightgrey;
 }
 
 .post__like-icon {
-  width: 25px;
-  height: 25px;
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 17px;
+  height: 17px;
+  margin: 0;
 }
 
 .post__likes-count {
@@ -27,22 +56,53 @@
 
 @media (min-width: @tablet) {
   .post {
+    position: relative;
     width: 50%;
+    padding: 0;
+  }
+
+  .post__content {
+    margin: 0;
+    position: relative;
+    color: @black;
+    width: 100%;
+    opacity: 1;
+    background-color: @lightgrey;
   }
 
   .post--main {
-    width: @tablet;
+    width: 100%;
+  }
+
+  .post--main .post__content {
+    width: 100%;
+  }
+
+  .post__image {
+    height: 268px;
+
+    &--main {
+      height: 400px;
+    }
+  }
+
+  .post__likes {
+    background-color: @lightgrey;
+    position: absolute;
+    right: 10px;
+    top: 20px;
   }
 }
 
 @media (min-width: @desktop) {
   .post {
     position: relative;
-    width: 225px;
+    width: 400px;
   }
 
   .post__content {
     position: absolute;
+    background-color: none;
     color: @white;
     bottom: 0;
     left: 0;

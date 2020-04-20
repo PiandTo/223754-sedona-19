@@ -1,12 +1,22 @@
 .ads {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  width: 100%;
-  height: auto;
+  background-size: @mobile 520px;
 }
 
 .ads__image {
   width: 100%;
   height: auto;
+}
+
+.ads__icon-tr,
+.ads__icon-tablet,
+.ads__icon-desktop {
+  margin-top: 113px;
+}
+
+.ads__icon-tablet,
+.ads__icon-desktop {
+  display: none;
 }
 
 @media (min-width: @tablet) {
@@ -19,10 +29,30 @@
     height: 350px;
     width: 472px;
   }
+
+  .ads__icon-tr {
+    display: none;
+  }
+
+  .ads__icon-tablet {
+    display: block;
+  }
 }
 
 @media (min-width: @desktop) {
+  .ads {
+    background-size: @desktop 520px;
+  }
+
   .ads__image {
     width: 502px;
+  }
+
+  .ads__icon-tablet {
+    display: none;
+  }
+
+  .ads__icon-desktop {
+    display: block;
   }
 }

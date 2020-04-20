@@ -1,0 +1,58 @@
+.ads-photo {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  position: relative;
+}
+
+.ads-photo__image {
+  height: 160px;
+  width: 100%;
+}
+
+.ads-photo__icon-tr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.ads-photo__icon-tablet,
+.ads-photo__icon-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .ads-photo__icon-tr {
+    display: none;
+  }
+
+  .ads-photo__image {
+    height: 295px;
+    width: 100%;
+  }
+
+  .ads-photo__icon-tablet {
+    display: block;
+  }
+
+  .ads-photo {
+    background-size: @tablet 295px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .ads-photo {
+    background-size: @desktop 520px;
+  }
+
+  .ads-photo__icon-tablet {
+    display: none;
+  }
+
+  .ads-photo__image {
+    height: 520px;
+    width: 100%;
+  }
+
+  .ads-photo__icon-desktop {
+    display: block;
+  }
+}

@@ -1,41 +1,80 @@
 .promo {
   .nostyle_item();
   background-color: @white;
+  padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.promo__list {
+  .nostyle_item();
+  padding-bottom: 40px;
 }
 
 .promo__item {
-  .nostyle_item();
+  width: 220px;
+  padding-top: 60px;
+  padding-left: 60px;
+  margin: 0;
+  position: relative;
 }
 
 .promo__description {
+  padding-top: 25px;
   font-size: 14px;
   line-height: 21px;
   color: @text;
+  margin: 0;
 }
 
-.promo__item--home {
-  background-image: url("../img/icon-house.svg");
-  background-repeat: no-repeat;
+.promo__icon {
+  position: absolute;
+  left: 0;
+  top: 50;
+  width: 40px;
+  height: 40px;
+  fill: @lightblue;
 }
 
-.promo__item--gift {
-  background-image: url("../img/icon-gift.svg");
-  background-repeat: no-repeat;
-}
-
-.promo__item--food {
-  background-image: url("../img/icon-burger.svg");
-  background-repeat: no-repeat;
+.promo__title {
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: @tablet) {
+  .promo {
+    width: auto;
+    padding: 0 45px;
+  }
+
   .promo__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 70px;
   }
 
   .promo__item {
-    width: 255px;
+    width: 165px;
+    padding-left: 0;
+  }
+
+  .promo__icon {
+    position: relative;
+  }
+
+  .promo__title {
+    text-align: center;
+    padding-top: 25px;
+  }
+
+  .promo__description {
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop) {
+  .promo {
+    padding: 0 80px;
   }
 }
